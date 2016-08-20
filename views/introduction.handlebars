@@ -1,0 +1,69 @@
+<body class="introduction">
+<div class="tiny-wrapper clearfix">
+    <div class="introduce">
+<h1>Hello {{session.username}}, welcome on Squiks !</h1>
+<p>You just need to select the language you want to work with and you're good to go !</p>
+    </div>
+<form method="post" action="/user-languages">
+    <p>Which language do you speak ?</p>
+    <div class="language-container spoken-language">
+        <div id="spoken_0" class="language-wrapper clearfix">
+            <div class="custom-select">
+                <select name="language" class="language">
+                    <option disabled selected="selected">Select a language</option>
+                    {{#each specific.languages as |language|}}
+                    <option value="{{language.abbr}}">{{language.name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="custom-select">
+                <select name="level" class="level">
+                    <option disabled>Select a level</option>
+                    <option value="4">4 - Advanced</option>
+                    <option value="5" selected="selected">5 - Native</option>
+                </select>
+            </div>
+            <div class="helper">
+                <span class="marker">?</span>
+                    <div class="content">
+                        <h3>1-Beginner</h3>
+                        <p>You can make or understand very simple sentences.</p>
+                        <h3>2-Elementary</h3>
+                        <p>You can understand sentences with specific words. You can describe your surrounding and make subordinate sentences. You can get key words of a text to understand it briefly.</p>
+                        <h3>3-Intermediate</h3>
+                        <p>You can understand the essential content of a concrete text. You can instant write with ease although you have a lack of vocabulary.</p>
+                        <h3>4-Advanced</h3>
+                        <p>You can understand most of the text but you need to have specific vocabulary and rules to complete your learning</p>
+                        <h3>5-Native</h3>
+                        <p>You perfectly speak and write the language as a native speaker.</p>
+                    </div>
+            </div>
+        </div>
+        <button class="add-language add-spoken-language">Add language</button>
+    </div>
+    <p>What do you learn ?</p>
+    <div class="language-container learning-language">
+        <div id="learning_0" class="language-wrapper clearfix">
+            <div class="custom-select">
+                <select name="language" class="language">
+                    <option disabled="disabled" selected="selected">Select a language</option>
+                    {{#each specific.languages as |language|}}
+                    <option value="{{language.abbr}}">{{language.name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="custom-select">
+                <select name="level" class="level">
+                    <option value="1" selected="selected">1 - Beginner</option>
+                    <option value="2">2 - Elementary</option>
+                    <option value="3">3 - Intermediate</option>
+                </select>
+            </div>
+        </div>
+        <button class="add-language add-learning-language">Add language</button>
+    </div>
+    <button class="cta submit" cta-text="Start learning">Start learning</button>
+    <div class="error"></div>
+</form>
+</div>
+</body>

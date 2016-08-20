@@ -1,0 +1,180 @@
+<main class="penpal">
+    <header>
+        <div class="wrapper">
+            <div class="custom-select">
+                <label for="spoken-language">Speaking :</label>
+                <select name="spoken-language" id="spoken-language">
+                    <option>Spanish</option>
+                    <option>French</option>
+                    <option>German</option>
+                    <option>Italian</option>
+                    <option>Chinese</option>
+                    <option>Tagalog</option>
+                    <option>Polish</option>
+                    <option>Korean</option>
+                    <option>Vietnamese</option>
+                    <option>Portuguese</option>
+                    <option>Japanese</option>
+                    <option>Greek</option>
+                    <option>Arabic</option>
+                    <option>Hindi (urdu)</option>
+                    <option>Russian</option>
+                    <option>Yiddish</option>
+                    <option>Thai (laotian)</option>
+                    <option>Persian</option>
+                    <option>French Creole</option>
+                    <option>Armenian</option>
+                    <option>Navaho</option>
+                    <option>Hungarian</option>
+                    <option>Hebrew</option>
+                    <option>Dutch</option>
+                    <option>Mon-khmer (cambodian)</option>
+                    <option>Gujarathi</option>
+                    <option>Ukrainian</option>
+                    <option>Czech</option>
+                    <option>Pennsylvania Dutch</option>
+                    <option>Miao (hmong)</option>
+                    <option>Norwegian</option>
+                    <option>Slovak</option>
+                    <option>Swedish</option>
+                    <option>Serbocroatian</option>
+                    <option>Kru</option>
+                    <option>Rumanian</option>
+                    <option>Lithuanian</option>
+                    <option>Finnish</option>
+                    <option>Panjabi</option>
+                    <option>Formosan</option>
+                    <option>Croatian</option>
+                    <option>Turkish</option>
+                    <option>Ilocano</option>
+                    <option>Bengali</option>
+                    <option>Danish</option>
+                    <option>Syriac</option>
+                    <option>Samoan</option>
+                    <option>Malayalam</option>
+                    <option>Cajun</option>
+                    <option>Amharic</option>
+                </select>
+            </div>
+            <div class="custom-select">
+                <label for="spoken-language">Learning :</label>
+                <select name="learning-language" id="learning-language">
+                    <option>Spanish</option>
+                    <option>French</option>
+                    <option>German</option>
+                    <option>Italian</option>
+                    <option>Chinese</option>
+                    <option>Tagalog</option>
+                    <option>Polish</option>
+                    <option>Korean</option>
+                    <option>Vietnamese</option>
+                    <option>Portuguese</option>
+                    <option>Japanese</option>
+                    <option>Greek</option>
+                    <option>Arabic</option>
+                    <option>Hindi (urdu)</option>
+                    <option>Russian</option>
+                    <option>Yiddish</option>
+                    <option>Thai (laotian)</option>
+                    <option>Persian</option>
+                    <option>French Creole</option>
+                    <option>Armenian</option>
+                    <option>Navaho</option>
+                    <option>Hungarian</option>
+                    <option>Hebrew</option>
+                    <option>Dutch</option>
+                    <option>Mon-khmer (cambodian)</option>
+                    <option>Gujarathi</option>
+                    <option>Ukrainian</option>
+                    <option>Czech</option>
+                    <option>Pennsylvania Dutch</option>
+                    <option>Miao (hmong)</option>
+                    <option>Norwegian</option>
+                    <option>Slovak</option>
+                    <option>Swedish</option>
+                    <option>Serbocroatian</option>
+                    <option>Kru</option>
+                    <option>Rumanian</option>
+                    <option>Lithuanian</option>
+                    <option>Finnish</option>
+                    <option>Panjabi</option>
+                    <option>Formosan</option>
+                    <option>Croatian</option>
+                    <option>Turkish</option>
+                    <option>Ilocano</option>
+                    <option>Bengali</option>
+                    <option>Danish</option>
+                    <option>Syriac</option>
+                    <option>Samoan</option>
+                    <option>Malayalam</option>
+                    <option>Cajun</option>
+                    <option>Amharic</option>
+                </select>
+            </div>
+            <div class="checkbox-section">
+                <label for="letter">
+                    <input class="hidden" id="letter" name="letter" type="checkbox"/><span>by letter</span>
+                </label>
+
+                <label for="chat">
+                    <input class="hidden" id="chat" name="chat" type="checkbox"/><span>by chat</span>
+                </label>
+            </div>
+            <button class="cta" cta-text="Find a penpal">Find a penpal</button>
+        </div>
+    </header>
+    <section class="user-list">
+        <ul class="wrapper">
+            {{#each specific.users as |user|}}
+            <li class="user">
+                <a href="/profile/{{user.USERNAME}}">
+                <div class="user-infos">
+                    <img class="mini-pic" src="{{user.PROFILE_PICTURE}}" alt=""/>
+                    <div class="container-infos">
+                        <h2>{{user.USERNAME}}</h2>
+                        {{#if user.CITY}}
+                        <span>{{user.CITY}}</span>
+                        {{else}}
+                        <span>Not provided</span>
+                        {{/if}}
+                    </div>
+                </div>
+                </a>
+                <div class="clearfix">
+                <div class="spoken-language">
+                    <span>Speak</span>
+                    <ul>
+                        {{#each user.spoken as |spoken|}}
+                            {{#if spoken}}
+                                <li>{{spoken.LANGUAGE}} <img src="../img/level-lang/{{spoken.LEVEL}}.svg" alt=""/></li>
+                            {{else}}
+                                <li>-</li>
+                            {{/if}}
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="spoken-language">
+                    <span>Learn</span>
+                    <ul>
+                        {{#each user.learning as |learning|}}
+                        {{#if learning}}
+                        <li>{{learning.LANGUAGE}} <img src="../img/level-lang/{{learning.LEVEL}}.svg" alt=""/></li>
+                        {{/if}}
+                        {{/each}}
+                    </ul>
+                </div>
+                </div>
+                {{#if user.ABOUT}}
+                <p class="description">{{user.ABOUT}}</p>
+                {{else}}
+                <p class="description">No description yet</p>
+                {{/if}}
+                <a class="cta" cta-text="Start conversation" href="/conversations">Start conversation</a>
+            </li>
+            {{/each}}
+
+
+        </ul>
+
+    </section>
+</main>

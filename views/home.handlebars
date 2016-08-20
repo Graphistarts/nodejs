@@ -1,0 +1,145 @@
+<div class="container-flow">
+    <main class="home">
+        <section class="user-post">
+            <form action="/api/posts/test" method="post" enctype="multipart/form-data" role="form">
+                <div class="user-input">
+                    <img class="mini-pic" src="{{{session.profile_picture}}}" alt=""/>
+                    <textarea name="user_text" id="user_text" placeholder="What is your thoughts ?"></textarea>
+                </div>
+                <div class="sub-post">
+                    <div class="error"></div>
+                    <label for="file_post"><img src="img/camera.svg" alt="add an image"/><span class="name-file"></span></label>
+                    <input id="file_post" name="file_post" class="hidden" type="file"/>
+                    <input name="id_user" type="hidden" value="{{{session.userID}}}"/>
+                    <button class="cta" cta-text="Post">Post</button>
+                </div>
+            </form>
+        </section>
+        <section class="flow clearfix">
+            {{#if specific.posts}}
+    {{#each specific.posts as |post|}}
+    <div id="{{post.ID}}" class="post-container">
+        <div class="post">
+            <div class="post-infos clearfix">
+                <div class="options">{{post.POST_DATE}}
+                    <button class="more-options"><img src="../img/arrow.svg" alt="Arrow"/></button>
+                    <div class="more-options-dd">
+                        <ul>
+                            <li><button>Report this post</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-infos">
+                    <a href="/profile/{{post.USERNAME}}">
+                        <img class="mini-pic" src="{{post.PROFILE_PICTURE}}" alt=""/>
+                        <div class="side-infos">
+                            <strong>{{{post.USERNAME}}}</strong>
+                            <div class="languages">
+                                <ul class="spoken-languages">
+                                    {{#each post.languages as |language|}}
+                                        {{#unless language.TYPE_LANGUAGE}}
+                                            <li>{{language.ABBR}}<img class="level" src="../img/level-lang/{{language.LEVEL}}.svg" alt="level {{language.LEVEL}}"/></li>
+                                        {{/unless}}
+                                    {{/each}}
+                                </ul>
+                                <ul class="learning-languages">
+                                    {{#each post.languages as |language|}}
+                                        {{#if language.TYPE_LANGUAGE}}
+                                            <li>{{language.ABBR}}<img class="level" src="../img/level-lang/{{language.LEVEL}}.svg" alt="level {{language.LEVEL}}"/></li>
+                                        {{/if}}
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- end post-infos -->
+            <div class="content-post">
+                <p>{{post.CONTENT_POST}}</p>
+                {{#if post.IMAGE_PATH}}
+                    <img src="{{post.IMAGE_PATH}}" alt="image of {{post.USERNAME}}"/>
+                {{/if}}
+            </div>
+            <div class="reaction-post">
+                <ul>
+                    <li><button class="heart"><span></span><strong>{{post.NBR_LIKE}}</strong></button></li>
+                    <li><button class="comment"><span></span><strong>{{post.NBR_COMMENTS}}</strong></button></li>
+                    <li><button  class="correct"><span></span><strong>{{post.NBR_CORRECTIONS}}</strong></button></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end post-->
+        <div class="comment-container">
+            <div class="user-comment-post">
+                <img src="{{{../session.profile_picture}}}" alt=""/>
+                <textarea placeholder="Write a reaction"></textarea>
+            </div>
+            <div class="comments-summary">
+                <ul>
+                    {{#each post.comments as |comment|}}
+                    <li>
+                        <a href="/profile/{{comment.USERNAME}}"><img src="{{comment.PROFILE_PICTURE}}" alt="test"/></a>
+                        <div class="user-comment">
+                            <div class="comment-infos clearfix">
+                                <a href="">{{comment.USERNAME}}</a>
+                                <span class="timer">{{comment.POST_DATE}}</span>
+                            </div>
+                            <p>{{{comment.CONTENT}}}</p>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+        <div class="correction-container">
+            <div class="user-correction-post">
+                <div class="clearfix">
+                    <button cta-text="Make a correction" class="activator cta active">Make a correction</button>
+                </div>
+                <div class="corrector clearfix">
+                    <img src="{{{../session.profile_picture}}}" alt=""/>
+                    <textarea placeholder="Write a reaction">I think you are right</textarea>
+                    <div class="actions clearfix">
+                        <button cta-text="Cancel" class="cta cta2 cancel">Cancel</button>
+                        <button cta-text="Save" class="cta save">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div class="corrections-summary">
+                <ul>
+                    {{#each post.corrections as |correction|}}
+                    <li>
+                        <a href="/profile/{{correction.USERNAME}}"><img src="{{correction.PROFILE_PICTURE}}" alt=""/></a>
+                        <div class="user-correction">
+                            <div class="correction-infos clearfix">
+                                <a href="">{{correction.USERNAME}}</a>
+                                <span class="timer">{{correction.POST_DATE}}</span>
+                            </div>
+                             <div class="correction">
+                                <p class="text">{{{correction.CONTENT}}}</p>
+                                <p class="text-correction">{{{correction.CONTENT_CORRECTION}}}</p>
+                            </div>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+{{/each}}
+            {{else}}
+            <p class="no-post">No posts yet</p>
+            {{/if}}
+        </section>
+    </main>
+    <aside>
+        <h1>Blog posts</h1>
+        <ul>
+            {{#each specific.blogs as |blog|}}
+            <li><a href="/blog/{{blog.URL}}"><img src="../img/blog/{{blog.IMAGE_PATH}}" alt=""/>{{blog.TITLE}}</a></li>
+            {{/each}}
+        </ul>
+        <a class="view-more" href="/blog">View more posts</a>
+    </aside>
+</div>

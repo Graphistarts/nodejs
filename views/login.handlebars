@@ -1,0 +1,42 @@
+<body class="signup">
+<header>
+    <div class="logo">
+        <a href="index">
+            <img src="../img/logo.svg" alt="Logo Squiks"/>
+            <h1>Squiks</h1>
+            <h2> Learn by sharing</h2>
+        </a>
+    </div>
+</header>
+<main>
+    <div class="form">
+        <h1>Log in</h1>
+        <div class="content-form">
+            <form action="account/session" method="post">
+                <input name="identifier" type="text" value="dwm@heaj.be" placeholder="email"/>
+                <input name="password" type="password" value="dwmheaj" placeholder="password"/>
+                {{#if session.loginError}}
+                <p class="error">The email and password you entered don't match.</p>
+                {{/if}}
+                <input type="submit" class="cta" value="Log in"/>
+                <p>or log in with</p>
+                <ul>
+                    <li>
+                        <a class="facebook" href="/special-login">
+                            <img src="../img/social/facebook.svg" alt="facebook"/>
+                            <p>Facebook</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="twitter" href="/special-login">
+                            <img src="../img/social/twitter.svg" alt="twitter"/>
+                            <p>Twitter</p>
+                        </a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <a class="login" href="signup">No account yet ? <span>Sign up</span></a>
+    </div>
+</main>
+</body>

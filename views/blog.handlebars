@@ -1,0 +1,33 @@
+
+<header>
+    <div class="wrapper">
+    <div class="logo">
+        <a href="/home">
+            <img src="../img/logo.svg" alt="Logo Squiks"/>
+            <h1>Squiks</h1>
+        </a>
+    </div>
+        <div class="redirection">
+            <p>Want to learn languages ?</p>
+            <a cta-text="Start learning" class="cta" href="/">Start learning</a>
+        </div>
+    </div>
+</header>
+
+<main class="blog">
+<section class="flow-posts tiny-wrapper">
+    <ul class="posts">
+        {{#each specific.posts as |post|}}
+        <li>
+            <a href="/blog/{{{post.URL}}}">
+                <img src="../img/blog/{{post.IMAGE_PATH}}" alt=""/>
+                <div>
+                    <h2>{{{post.TITLE}}}</h2>
+                    <p>{{{post.SUMMARY}}}</p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</section>
+</main>

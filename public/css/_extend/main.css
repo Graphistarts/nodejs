@@ -1,0 +1,335 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, div, summary,
+time, mark, audio, video, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+body {
+  line-height: 1; }
+
+svg {
+  max-height: 100%; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, div {
+  display: block; }
+
+ul, ol {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+:focus {
+  outline: 0; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+input, select {
+  vertical-align: middle; }
+
+button, input[type="checkbox"], label, input[type="submit"] {
+  cursor: pointer; }
+
+img {
+  max-width: 100%;
+  vertical-align: top; }
+
+input, button {
+  border: 0;
+  font-size: 100%;
+  background: none;
+  padding: 0; }
+
+small {
+  text-align: center;
+  display: block; }
+
+textarea {
+  font-size: .875rem;
+  padding: .5rem; }
+
+html {
+  font-size: 100%;
+  color: #444444; }
+  html body {
+    font: .875rem/1.4 "Open Sans", sans-serif;
+    word-wrap: break-word; }
+    html body h1 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 2rem;
+      line-height: 2rem;
+      font-weight: 400; }
+    html body h2 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      font-weight: 300; }
+    html body h3 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      font-weight: 300; }
+    html body p {
+      font: 0.875rem/1.5 "Open Sans", sans-serif;
+      word-wrap: break-word;
+      margin-bottom: 1rem; }
+      html body p strong {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400; }
+
+body {
+  background: #F4F4F4; }
+  body .cta {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff2e00+0,ce0048+100 */
+    background: #ff2e00;
+    /* Old browsers */
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ff2e00 0%, #be0048 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2e00', endColorstr='#be0048',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+    border-radius: 5px;
+    padding: .6rem 1.5rem;
+    display: inline-block;
+    text-align: center;
+    transition: .5s ease;
+    position: relative;
+    z-index: 8;
+    color: transparent; }
+    body .cta:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4c28+0,d10079+100 */
+      background: #ff4c28;
+      /* Old browsers */
+      /* FF3.6-15 */
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(135deg, #ff4c28 0%, #d10079 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4c28', endColorstr='#d10079',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */
+      box-sizing: border-box;
+      opacity: 0;
+      transition: .2s ease;
+      color: #FFFFFF;
+      border-radius: 5px;
+      z-index: 20; }
+      body .cta:afterinput[type="submit"] {
+        color: #FFFFFF; }
+    body .cta:before {
+      position: absolute;
+      content: attr(cta-text);
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      right: 0;
+      bottom: 0;
+      box-sizing: border-box;
+      z-index: 100;
+      color: #FFFFFF; }
+    body .cta:hover:after {
+      opacity: 1; }
+    body .cta:hover:before {
+      color: #FFFFFF; }
+    body .cta.cta2 {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4c28+0,d10079+100 */
+      background: #BBB; }
+      body .cta.cta2:after {
+        background: #AAA;
+        color: #FFFFFF; }
+    body .cta.cta-reverse {
+      color: #E95451;
+      background: transparent;
+      border: 2px solid #E95451; }
+    body .cta.cta-colored {
+      color: #444444;
+      background: #E95451;
+      border: 0; }
+      body .cta.cta-colored:hover {
+        background: #F96461; }
+  body .more {
+    padding: 5px 10px;
+    float: right;
+    margin-top: 1rem; }
+  body a {
+    color: #444444;
+    transition: .3s ease; }
+    body a:hover {
+      color: #E95451; }
+  body .wrapper {
+    width: 1200px;
+    margin: 0 auto; }
+  body .disabled {
+    pointer-events: none;
+    opacity: .5; }
+  body main {
+    padding: 0; }
+  body .title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3rem; }
+    body .title:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 50%;
+      height: 2px;
+      background: #E95451; }
+  body .clearfix:after {
+    content: "";
+    display: table;
+    clear: both; }
+  body .mini-pic {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%; }
+  body .hidden {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    padding: 0;
+    margin: 0;
+    visibility: hidden; }
+
+.main-header {
+  background: #272727;
+  padding: 1rem;
+  box-sizing: border-box;
+  min-width: 1200px; }
+  .main-header .logo {
+    width: 100px;
+    float: left; }
+    .main-header .logo h1 {
+      line-height: 0;
+      font-size: 0;
+      color: transparent; }
+  .main-header nav > ul {
+    float: right;
+    line-height: 2rem; }
+    .main-header nav > ul > li {
+      display: inline-block;
+      margin-right: 1rem;
+      position: relative; }
+      .main-header nav > ul > li:last-child {
+        margin-right: 0; }
+      .main-header nav > ul > li img {
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        position: relative;
+        top: -5px;
+        right: 2px;
+        border: 0; }
+      .main-header nav > ul > li .dd {
+        position: absolute;
+        right: 0;
+        z-index: 999;
+        top: 3rem;
+        width: 150px;
+        background: #FFFFFF;
+        opacity: 0;
+        border: 1px solid #F4F4F4;
+        transition: .3s ease;
+        pointer-events: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        border-radius: 3px;
+        transform: translate(0, 0.5rem); }
+        .main-header nav > ul > li .dd:before {
+          content: "";
+          position: absolute;
+          top: -5px;
+          right: .5rem;
+          width: 10px;
+          height: 10px;
+          background: #FFFFFF;
+          transform: rotate(45deg);
+          border-radius: 1px; }
+        .main-header nav > ul > li .dd a {
+          color: #444444; }
+        .main-header nav > ul > li .dd.show {
+          opacity: 1;
+          pointer-events: auto;
+          transform: translate(0, 0); }
+        .main-header nav > ul > li .dd li {
+          border-bottom: 1px solid #F4F4F4;
+          display: block;
+          width: 100%; }
+          .main-header nav > ul > li .dd li a {
+            padding: .5rem;
+            display: block; }
+            .main-header nav > ul > li .dd li a img {
+              max-width: 20px;
+              max-height: 20px;
+              opacity: .2;
+              top: .35rem;
+              margin-right: .5rem; }
+          .main-header nav > ul > li .dd li:last-child {
+            border-bottom: 0; }
+      .main-header nav > ul > li button {
+        padding: 0; }
+      .main-header nav > ul > li a {
+        font-weight: 400;
+        color: #FFFFFF; }
+        .main-header nav > ul > li a.active {
+          color: #E95451; }
+        .main-header nav > ul > li a:hover {
+          color: #E95451; }
+
+footer {
+  padding: 2rem; }
+  footer small {
+    text-align: center;
+    width: 100%; }

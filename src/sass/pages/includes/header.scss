@@ -1,0 +1,108 @@
+.main-header {
+  background: $darkGrey;
+  padding: 1rem;
+  box-sizing: border-box;
+  min-width: 1200px;
+
+  .logo {
+    width: 100px;
+    float: left;
+    h1{
+      line-height: 0;
+      font-size: 0;
+      color: transparent;
+    }
+  }
+  nav {
+    >ul {
+      float: right;
+      line-height: 2rem;
+      >li {
+        display: inline-block;
+        margin-right: 1rem;
+        position: relative;
+        &:last-child{
+          margin-right: 0;
+        }
+        img{
+          background-size: cover;
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+          position: relative;
+          top: -5px;
+          right: 2px;
+          border: 0;
+        }
+        .dd{
+          position: absolute;
+          right: 0;
+          z-index: 999;
+          top:3rem;
+          width: 150px;
+          background: $white;
+          opacity: 0;
+          border: 1px solid $lightGrey;
+          transition: .3s ease;
+          pointer-events: none;
+          user-select: none;
+          border-radius: 3px;
+          transform:translate(0,.5rem);
+          &:before{
+            content: "";
+            position: absolute;
+            top: -5px;
+            right: .5rem;
+            width: 10px;
+            height: 10px;
+            background: $white;
+            transform: rotate(45deg);
+            border-radius: 1px;
+          }
+          a{
+            color: $fontColor;
+          }
+          &.show{
+            opacity: 1;
+            pointer-events: auto;
+            transform:translate(0,0);
+          }
+
+          li{
+            border-bottom: 1px solid $lightGrey;
+            display: block;
+            width: 100%;
+            a{
+              padding: .5rem;
+              display: block;
+              img{
+                max-width: 20px;
+                max-height: 20px;
+                opacity: .2;
+                top: .35rem;
+                margin-right: .5rem;
+              }
+            }
+            &:last-child{
+              border-bottom: 0;
+            }
+          }
+
+        }
+        button{
+          padding: 0;
+        }
+        a{
+          font-weight: 400;
+          color: $white;
+          &.active{
+            color: $mainColor;
+          }
+          &:hover{
+            color: $mainColor;
+          }
+        }
+      }
+    }
+  }
+}

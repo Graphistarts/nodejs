@@ -1,0 +1,34 @@
+[
+  {
+    "name":"English",
+    "abbr":"en"
+  },
+  {
+    "name":"French",
+    "abbr":"fr"
+  },
+  {
+    "name":"German",
+    "abbr":"de"
+  },
+  {
+    "name":"Italian",
+    "abbr":"it"
+  },
+  {
+    "name":"Russian",
+    "abbr":"ru"
+  },
+  {
+    "name":"Dutch",
+    "abbr":"nl"
+  },
+  {
+    "name":"Spanish",
+    "abbr":"es"
+  },
+  {
+    "name":"Arabic",
+    "abbr":"ar"
+  }
+]

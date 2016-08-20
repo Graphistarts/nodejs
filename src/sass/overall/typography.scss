@@ -1,0 +1,44 @@
+// -- TITLES -- //
+$mainFont: 'Open Sans', sans-serif;
+$subFont: 'Tahoma',serif;
+html {
+  font-size: 100%; // 16px
+  color: $fontColor;
+  body {
+    font: .875rem/1.4 "Open Sans", sans-serif; // 14/16px
+    word-wrap: break-word;
+
+    h1 {
+      font-family: $mainFont;
+      font-size: 2rem;
+      line-height: 2rem;
+      font-weight: 400;
+    }
+
+    h2 {
+      font-family: $mainFont;
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      font-weight: 300;
+    }
+
+    h3 {
+      font-family: $mainFont;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      font-weight: 300;
+    }
+
+    // -- PARAGRAPHS -- //
+
+    p {
+      font: .875rem/1.5 $mainFont; // 14/16px
+      word-wrap: break-word;
+      margin-bottom: 1rem;
+      strong {
+        font-family: $mainFont;
+        font-weight: 400;
+      }
+    }
+  }
+}

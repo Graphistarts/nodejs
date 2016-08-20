@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="91px" height="91px" viewBox="0 0 91 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39 (31667) - http://www.bohemiancoding.com/sketch -->
+    <title>profile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-15" transform="translate(-370.000000, -164.000000)">
+            <g id="profile" transform="translate(371.000000, 165.000000)">
+                <g id="Group">
+                    <g transform="translate(23.421053, 18.736842)" fill="#000000">
+                        <ellipse id="Oval" cx="21.0789474" cy="13.5607895" rx="14.0526316" ry="13.5607895"></ellipse>
+                        <path d="M42.1110526,29.8337368 C42.1438421,30.2834211 42.1578947,30.7331053 42.1578947,31.1874737 C42.1578947,42.4202105 32.7426316,51.5263158 21.0789474,51.5263158 C9.43868421,51.5263158 0,42.4202105 0,31.1874737 C0,30.7331053 0.0140526316,30.2787368 0.0468421053,29.8337368 L42.1110526,29.8337368" id="Shape" transform="translate(21.078947, 40.680026) scale(1, -1) translate(-21.078947, -40.680026) "></path>
+                    </g>
+                    <circle id="Oval" stroke="#000000" stroke-width="2" cx="44.5" cy="44.5" r="44.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

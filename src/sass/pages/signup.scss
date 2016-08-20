@@ -1,0 +1,151 @@
+@import "../overall/colors.scss";
+@import "../global/_functions.scss";
+@import "../global/_easing.scss";
+.signup {
+  position: relative;
+  padding-top: 2rem;
+  min-height: 100vh;
+  &:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url(../../img/homepage-bg-gradient.png);
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: -1;
+    background-attachment: fixed;
+  }
+    .logo {
+      width: 250px;
+      margin: 0 auto;
+      h1 {
+        line-height: 0;
+        font-size: 0;
+        color: transparent;
+        margin-bottom: 1rem;
+      }
+      h2{
+        color: $white;
+        text-align: center;
+      }
+    }
+
+  .form{
+    width: 400px;
+    margin: 5rem auto 0;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: $white;
+    h1{
+      background: rgba(20,20,20,.6);
+      padding: 1rem;
+      border-radius: 5px 5px 0 0;
+    }
+    .content-form{
+      overflow: hidden;
+      background: rgba(20,20,20,.3);
+      padding: 2rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      .profile_picture{
+        position: relative;
+        margin-bottom: 2rem;
+        height: 3rem;
+        display:inline-block;
+        line-height: 3rem;
+        width: 100%;
+        text-align: left;
+        text-indent: 4rem;
+        &:before{
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 3rem;
+          height: 3rem;
+          background: url("../../img/upload-profile-picture.svg");
+          background-size: cover;
+        }
+      }
+      input{
+        display: block;
+        border-radius: 3px;
+        color: $white;
+        box-sizing: border-box;
+        &[type="email"],
+        &[type="password"],
+        &[type="text"]
+        {
+          background: rgba(255,255,255,.15);
+          width: 100%;
+          text-indent: 1rem;
+          padding: 1rem .5rem;
+          margin-bottom: 1rem;
+          &:focus{
+            background: rgba(255,255,255,.2);
+          }
+        }
+      }
+      .cta{
+        width: 100%;
+        margin: 2rem 0;
+        padding: 1rem;
+      }
+    }
+    p{margin: 0 auto;}
+    ul{
+      overflow: hidden;
+      margin-top: 2rem;
+      li{
+        float: left;
+        width: 45%;
+        text-align: center;
+        &:first-child{
+          margin-right: 10%;
+        }
+        a{
+          color: $white;
+          overflow: hidden;
+          display: block;
+          padding: .5rem;
+          border-radius: 2px;
+          &.twitter{
+            background: #5EACEE;
+          }
+
+          &.facebook{
+            background: #3B5998;
+          }
+          img{
+            width: 30px;
+            float: left;
+            padding-right: .5rem;
+            margin-right: .5rem;
+            border-right: 1px solid $lightGrey;
+          }
+        }
+      }
+    }
+  }
+  .login{
+    color: $white;
+  }
+
+  .error{
+    color: $lightGrey;
+    padding-top: 0;
+    text-align: left;
+    p{
+      margin-bottom: .5rem;
+      &:last-child{
+        padding-bottom: 0;
+      }
+    }
+    &.active{
+      padding-top: .5rem 0;
+    }
+  }
+}

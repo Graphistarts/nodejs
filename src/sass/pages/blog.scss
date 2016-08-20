@@ -1,0 +1,133 @@
+@import "../overall/colors.scss";
+@import "../global/_functions.scss";
+@import "../global/_easing.scss";
+header{
+  background: $darkGrey;
+  overflow: hidden;
+  padding: 1rem;
+  .logo {
+    width: 100px;
+    float: left;
+    h1{
+      line-height: 0;
+      font-size: 0;
+      color: transparent;
+    }
+  }
+  .redirection{
+    float: right;
+    width: 350px;
+    p{
+      float: left;
+      padding-top: .5rem;
+      margin: 0 auto;
+      color: $white;
+    }
+    .cta{
+      float: right;
+    }
+  }
+}
+
+.blog{
+  .tiny-wrapper{
+    width: 680px;
+    margin: 0 auto;
+    .posts{
+      margin-top: 4rem;
+      background:$white;
+      padding: 2rem;
+      li{
+        overflow: hidden;
+        margin-bottom: 4rem;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        a:hover{
+          color: $fontColor;
+        }
+        h2{
+          line-height: 1.4;
+          font-size: 1.4rem;
+        }
+        img{
+          width: 200px;
+          height: 200px;
+          float: left;
+        }
+        div{
+          float: right;
+          margin-left:20px;
+          width: 380px;
+          span{
+            text-align: right;
+            color: $normalGrey;
+            width: 100%;
+            display: block;
+            margin: .5rem auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.article{
+  header{
+    background: $normalLightGrey;
+    a{
+      position: relative;
+      margin-left: 1rem;
+      &:before{
+        content: "";
+        position: absolute;
+        left: -1rem;
+        top: 3px;
+        width: 8px;
+        height: 14px;
+        transform: rotate(180deg);
+        background: url(../img/arrow.svg);
+        background-size: 100% 100%;
+
+      }
+    }
+  }
+  .tiny-wrapper{
+    width: 680px;
+    margin: 0 auto 4rem;
+    &.article{
+      margin-top: 6rem;
+      background: $white;
+      padding: 4rem 2rem 2rem;
+      position: relative;
+      img{
+        position: absolute;
+        left: 50%;
+        top: -40px;
+        transform: translate(-50%,0);
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+      }
+      p{
+      line-height: 1.6;
+      }
+      h1{
+        margin-bottom: 3rem;
+        line-height: 3rem;
+      }
+      h2{
+        margin:3rem 0 1.5rem;
+        line-height: 1.6;
+        color: $mainColor;
+      }
+
+      small{
+        float: right;
+      }
+
+    }
+  }
+
+}

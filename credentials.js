@@ -1,0 +1,1 @@
+module.exports = {cookieSecret : "Overdose is my pseudo"};

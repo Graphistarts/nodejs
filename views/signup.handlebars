@@ -1,0 +1,44 @@
+<body class="signup">
+<header>
+    <div class="logo">
+        <a href="index">
+            <img src="../img/logo.svg" alt="Logo Squiks"/>
+            <h1>Squiks</h1>
+            <h2> Learn by sharing</h2>
+        </a>
+    </div>
+</header>
+<main>
+    <div class="form">
+        <h1>Sign up</h1>
+        <div class="content-form">
+            <form action="account/signup" method="post" enctype="multipart/form-data" role="form" novalidate>
+                <label for="profile_picture" class="profile_picture">Choose a profile picture</label>
+                <input type="file" id="profile_picture" name="profile_picture" class="hidden" required="required"/>
+                <input type="text" name="username" value="" placeholder="username" min="3" max="17" required="required"/>
+                <input type="email" name="email" value="" placeholder="email" required="required"/>
+                <input type="password" name="password" value="" placeholder="password" min="6" required="required"/>
+                <div class="error"></div>
+                <input type="submit" cta-text="Create an account" class="cta" value="Create an account"/>
+                <input type="hidden" name="_crsf" value="{{crsf}}"/>
+                <p>or sign up with</p>
+                <ul>
+                    <li>
+                        <a class="facebook" href="/special-login">
+                            <img src="../img/social/facebook.svg" alt="facebook"/>
+                            <p>Facebook</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="twitter" href="/special-login">
+                            <img src="../img/social/twitter.svg" alt="twitter"/>
+                            <p>Twitter</p>
+                        </a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <a class="login" href="login">Have an account ? <span>Login</span></a>
+    </div>
+</main>
+</body>

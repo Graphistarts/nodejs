@@ -1,0 +1,439 @@
+html .container-flow {
+  width: 1000px;
+  margin: 0 auto; }
+  html .container-flow .home {
+    width: 600px;
+    float: left;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #F4F4F4; }
+    html .container-flow .home .user-post {
+      width: 100%;
+      border-radius: 5px;
+      background: #FFFFFF;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      overflow: hidden; }
+      html .container-flow .home .user-post .user-input textarea {
+        width: 90%;
+        box-sizing: border-box;
+        border: 1px solid #F4F4F4;
+        resize: none;
+        height: 75px;
+        float: right; }
+      html .container-flow .home .user-post .user-input img {
+        float: left; }
+      html .container-flow .home .user-post .sub-post {
+        width: 90%;
+        float: right;
+        margin-top: 1rem; }
+        html .container-flow .home .user-post .sub-post .error {
+          color: #ff1c50;
+          padding-top: 0;
+          text-align: left; }
+          html .container-flow .home .user-post .sub-post .error p {
+            margin-bottom: .5rem; }
+            html .container-flow .home .user-post .sub-post .error p:last-child {
+              padding-bottom: 0; }
+          html .container-flow .home .user-post .sub-post .error.active {
+            padding-top: 0; }
+        html .container-flow .home .user-post .sub-post label {
+          padding-top: .5rem; }
+          html .container-flow .home .user-post .sub-post label img {
+            max-width: 20px;
+            opacity: .3;
+            margin-right: 1rem; }
+          html .container-flow .home .user-post .sub-post label span {
+            color: #BBB; }
+        html .container-flow .home .user-post .sub-post button {
+          float: right; }
+    html .container-flow .home .flow {
+      border-radius: 5px; }
+      html .container-flow .home .flow .post-container {
+        border: 1px solid #E6E6E6;
+        background: #FFFFFF;
+        margin-bottom: 1rem;
+        box-shadow: 1px 1px 2px 0 #E6E6E6;
+        border-radius: 4px; }
+        html .container-flow .home .flow .post-container .post {
+          padding: 1rem;
+          border-bottom: 1px solid #E6E6E6;
+          position: relative;
+          z-index: 11;
+          overflow: hidden;
+          width: 100%; }
+          html .container-flow .home .flow .post-container .post:last-child {
+            border-bottom: 0;
+            padding-bottom: 0; }
+          html .container-flow .home .flow .post-container .post .post-infos {
+            width: 100%;
+            display: block; }
+            html .container-flow .home .flow .post-container .post .post-infos .user-infos {
+              overflow: hidden; }
+              html .container-flow .home .flow .post-container .post .post-infos .user-infos .mini-pic {
+                float: left; }
+              html .container-flow .home .flow .post-container .post .post-infos .user-infos .side-infos {
+                margin-left: 1rem;
+                float: left; }
+                html .container-flow .home .flow .post-container .post .post-infos .user-infos .side-infos strong {
+                  color: #E95451;
+                  font-size: 1rem;
+                  font-weight: 400; }
+                html .container-flow .home .flow .post-container .post .post-infos .user-infos .side-infos .languages {
+                  font-size: .5rem; }
+                  html .container-flow .home .flow .post-container .post .post-infos .user-infos .side-infos .languages li {
+                    float: left;
+                    width: .9rem;
+                    text-align: center;
+                    margin-right: 5px;
+                    text-transform: uppercase; }
+                    html .container-flow .home .flow .post-container .post .post-infos .user-infos .side-infos .languages li:last-child {
+                      margin-right: 0; }
+                  html .container-flow .home .flow .post-container .post .post-infos .user-infos .side-infos .languages .spoken-languages {
+                    float: left;
+                    margin-right: 1.5rem;
+                    position: relative; }
+                    html .container-flow .home .flow .post-container .post .post-infos .user-infos .side-infos .languages .spoken-languages:after {
+                      position: absolute;
+                      content: "";
+                      right: -1rem;
+                      top: 50%;
+                      transform: translate(0, -50%);
+                      width: 6px;
+                      opacity: .3;
+                      height: 10px;
+                      background: url("../../img/arrow.svg");
+                      background-size: cover; }
+                  html .container-flow .home .flow .post-container .post .post-infos .user-infos .side-infos .languages .learning-languages {
+                    float: left; }
+            html .container-flow .home .flow .post-container .post .post-infos .options {
+              float: right;
+              opacity: .5;
+              margin-right: .25rem;
+              font-size: .75rem;
+              position: relative; }
+              html .container-flow .home .flow .post-container .post .post-infos .options .more-options-dd {
+                position: absolute;
+                right: 0;
+                bottom: -1.5rem;
+                min-width: 100px;
+                padding: .25rem;
+                background: #FFFFFF;
+                box-shadow: 0 2px 2px 0 #E6E6E6;
+                opacity: 0;
+                pointer-events: none; }
+                html .container-flow .home .flow .post-container .post .post-infos .options .more-options-dd.active {
+                  opacity: 1;
+                  pointer-events: auto; }
+              html .container-flow .home .flow .post-container .post .post-infos .options .more-options {
+                padding: 0;
+                float: right; }
+                html .container-flow .home .flow .post-container .post .post-infos .options .more-options img {
+                  margin: .2rem 0 0 .5rem;
+                  max-width: 7px;
+                  opacity: .4;
+                  transform: rotate(90deg); }
+          html .container-flow .home .flow .post-container .post .content-post {
+            margin-top: 1rem; }
+            html .container-flow .home .flow .post-container .post .content-post img {
+              border-radius: 4px;
+              max-height: 25rem; }
+          html .container-flow .home .flow .post-container .post .reaction-post {
+            margin-top: 1rem;
+            overflow: hidden; }
+            html .container-flow .home .flow .post-container .post .reaction-post ul li button {
+              float: left;
+              margin-right: 1rem;
+              color: #BBB; }
+              html .container-flow .home .flow .post-container .post .reaction-post ul li button img {
+                width: 1rem;
+                height: 1rem;
+                margin-right: 3px; }
+              html .container-flow .home .flow .post-container .post .reaction-post ul li button strong {
+                font-weight: 400; }
+              html .container-flow .home .flow .post-container .post .reaction-post ul li button.heart span.on svg path {
+                animation: heart-beat .25s forwards; }
+              html .container-flow .home .flow .post-container .post .reaction-post ul li button span {
+                width: 1rem;
+                height: 1rem;
+                margin-right: 3px;
+                display: block;
+                float: left;
+                padding-top: .1rem; }
+                html .container-flow .home .flow .post-container .post .reaction-post ul li button span svg {
+                  transform-origin: center center; }
+                  html .container-flow .home .flow .post-container .post .reaction-post ul li button span svg g {
+                    padding: .5rem;
+                    transform-origin: center center; }
+            html .container-flow .home .flow .post-container .post .reaction-post ul li:last-child {
+              margin-right: 0; }
+        html .container-flow .home .flow .post-container .comment-container {
+          background: #F8F8F8;
+          position: relative;
+          z-index: 10;
+          opacity: 0;
+          height: 0;
+          transition: .3s ease;
+          pointer-events: none;
+          -webkit-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none; }
+          html .container-flow .home .flow .post-container .comment-container.active {
+            opacity: 1;
+            height: auto;
+            pointer-events: auto;
+            -webkit-user-select: unset;
+               -moz-user-select: unset;
+                -ms-user-select: unset;
+                    user-select: unset; }
+          html .container-flow .home .flow .post-container .comment-container .user-comment-post {
+            overflow: hidden;
+            background: #FFFFFF;
+            padding: .5rem 1rem;
+            box-shadow: 0 2px 2px 0 #E6E6E6; }
+            html .container-flow .home .flow .post-container .comment-container .user-comment-post img {
+              width: 35px;
+              height: 35px;
+              float: left;
+              border-radius: 100%; }
+            html .container-flow .home .flow .post-container .comment-container .user-comment-post textarea {
+              width: calc(100% - 35px - 1rem);
+              margin-left: 1rem;
+              border-radius: 2px;
+              height: 35px;
+              border: 0;
+              resize: none;
+              padding: .5rem 0 0;
+              box-sizing: border-box; }
+          html .container-flow .home .flow .post-container .comment-container .comments-summary ul li {
+            overflow: hidden;
+            padding: .5rem 1rem; }
+            html .container-flow .home .flow .post-container .comment-container .comments-summary ul li:first-child {
+              padding-top: 1rem; }
+            html .container-flow .home .flow .post-container .comment-container .comments-summary ul li a {
+              overflow: hidden;
+              float: left; }
+              html .container-flow .home .flow .post-container .comment-container .comments-summary ul li a img {
+                max-width: 35px;
+                height: 35px;
+                float: left;
+                margin-right: .25rem;
+                border-radius: 100%; }
+            html .container-flow .home .flow .post-container .comment-container .comments-summary ul li .comment-infos {
+              display: block;
+              width: 100%; }
+              html .container-flow .home .flow .post-container .comment-container .comments-summary ul li .comment-infos .timer {
+                float: right;
+                opacity: .5;
+                font-size: .75rem; }
+            html .container-flow .home .flow .post-container .comment-container .comments-summary ul li .user-comment {
+              width: calc(100% - 50px);
+              float: right; }
+              html .container-flow .home .flow .post-container .comment-container .comments-summary ul li .user-comment a {
+                margin-right: .5rem;
+                color: #E95451;
+                font-weight: bold;
+                margin-top: .018rem;
+                position: relative; }
+                html .container-flow .home .flow .post-container .comment-container .comments-summary ul li .user-comment a:after {
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  bottom: 0rem;
+                  width: 100%;
+                  transform: scale(0, 1);
+                  height: 1px;
+                  background: #E95451;
+                  transition: .2s ease; }
+                html .container-flow .home .flow .post-container .comment-container .comments-summary ul li .user-comment a:hover:after {
+                  width: 100%;
+                  transform: scale(1); }
+        html .container-flow .home .flow .post-container .correction-container {
+          opacity: 0;
+          height: 0; }
+          html .container-flow .home .flow .post-container .correction-container .user-correction-post {
+            background: #FFFFFF;
+            padding: .5rem 1rem;
+            box-shadow: 0 2px 2px 0 #E6E6E6;
+            position: relative; }
+            html .container-flow .home .flow .post-container .correction-container .user-correction-post .activator {
+              float: right;
+              opacity: 0;
+              height: 0;
+              pointer-events: none;
+              position: absolute;
+              right: 0;
+              top: 0; }
+            html .container-flow .home .flow .post-container .correction-container .user-correction-post .corrector {
+              opacity: 0;
+              height: 0;
+              pointer-events: none;
+              position: absolute; }
+              html .container-flow .home .flow .post-container .correction-container .user-correction-post .corrector.active {
+                opacity: 1;
+                height: auto;
+                pointer-events: auto;
+                position: relative; }
+              html .container-flow .home .flow .post-container .correction-container .user-correction-post .corrector .actions {
+                float: right;
+                transition: .25s ease; }
+                html .container-flow .home .flow .post-container .correction-container .user-correction-post .corrector .actions .cancel {
+                  margin-right: 1rem; }
+            html .container-flow .home .flow .post-container .correction-container .user-correction-post img {
+              width: 35px;
+              height: 35px;
+              float: left;
+              border-radius: 100%; }
+            html .container-flow .home .flow .post-container .correction-container .user-correction-post textarea {
+              width: calc(100% - 35px - 1rem);
+              margin-left: 1rem;
+              border-radius: 2px;
+              height: 35px;
+              border: 1px solid #F4F4F4;
+              padding: .5rem;
+              box-sizing: border-box;
+              margin-bottom: .5rem;
+              resize: vertical; }
+          html .container-flow .home .flow .post-container .correction-container .corrections-summary {
+            position: absolute; }
+            html .container-flow .home .flow .post-container .correction-container .corrections-summary li {
+              overflow: hidden;
+              padding: .5rem 1rem; }
+              html .container-flow .home .flow .post-container .correction-container .corrections-summary li:first-child {
+                padding-top: 1rem; }
+              html .container-flow .home .flow .post-container .correction-container .corrections-summary li a {
+                overflow: hidden;
+                float: left; }
+                html .container-flow .home .flow .post-container .correction-container .corrections-summary li a img {
+                  max-width: 35px;
+                  height: 35px;
+                  float: left;
+                  margin-right: .25rem;
+                  border-radius: 100%; }
+              html .container-flow .home .flow .post-container .correction-container .corrections-summary li .correction-infos {
+                display: block;
+                width: 100%;
+                margin-bottom: .5rem; }
+                html .container-flow .home .flow .post-container .correction-container .corrections-summary li .correction-infos a {
+                  margin-left: .5rem;
+                  color: #E95451;
+                  font-weight: bold;
+                  margin-top: .5rem;
+                  position: relative; }
+                  html .container-flow .home .flow .post-container .correction-container .corrections-summary li .correction-infos a:after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0rem;
+                    width: 100%;
+                    transform: scale(0, 1);
+                    height: 1px;
+                    background: #E95451;
+                    transition: .2s ease; }
+                  html .container-flow .home .flow .post-container .correction-container .corrections-summary li .correction-infos a:hover:after {
+                    width: 100%;
+                    transform: scale(1); }
+                html .container-flow .home .flow .post-container .correction-container .corrections-summary li .correction-infos .timer {
+                  float: right;
+                  opacity: .5;
+                  font-size: .75rem; }
+              html .container-flow .home .flow .post-container .correction-container .corrections-summary li .correction {
+                opacity: 1;
+                pointer-events: none;
+                height: auto;
+                padding-left: 4rem; }
+                html .container-flow .home .flow .post-container .correction-container .corrections-summary li .correction p {
+                  position: relative; }
+                html .container-flow .home .flow .post-container .correction-container .corrections-summary li .correction .text:before {
+                  content: "";
+                  left: -1rem;
+                  top: .35rem;
+                  color: #ff1c50;
+                  width: .6rem;
+                  height: .6rem;
+                  background: url(../img/false.svg);
+                  background-size: 100% 100%;
+                  position: absolute; }
+                html .container-flow .home .flow .post-container .correction-container .corrections-summary li .correction .text strong {
+                  color: #ff1c50; }
+                html .container-flow .home .flow .post-container .correction-container .corrections-summary li .correction .text-correction:before {
+                  content: "";
+                  left: -1rem;
+                  top: .3rem;
+                  color: #08B976;
+                  width: .7rem;
+                  height: .7rem;
+                  background: url(../img/true.svg);
+                  background-size: 100% 100%;
+                  position: absolute; }
+                html .container-flow .home .flow .post-container .correction-container .corrections-summary li .correction .text-correction strong {
+                  color: #08B976; }
+          html .container-flow .home .flow .post-container .correction-container.active {
+            opacity: 1;
+            height: auto; }
+            html .container-flow .home .flow .post-container .correction-container.active .corrections-summary {
+              position: relative; }
+            html .container-flow .home .flow .post-container .correction-container.active .activator.active {
+              position: relative;
+              opacity: 1;
+              height: auto;
+              pointer-events: auto; }
+      html .container-flow .home .flow .no-post {
+        display: block;
+        text-align: center; }
+  html .container-flow aside {
+    float: right;
+    width: 350px;
+    background: #FFFFFF;
+    padding: 1rem 1.5rem 0 1.5rem;
+    border-radius: 5px;
+    margin-top: 1rem; }
+    html .container-flow aside h1 {
+      font-size: 1rem; }
+    html .container-flow aside ul {
+      border-bottom: 1px solid #F4F4F4;
+      padding: 0 0 1rem; }
+      html .container-flow aside ul li {
+        position: relative;
+        padding: 1rem 0; }
+        html .container-flow aside ul li a {
+          height: 45px;
+          overflow: hidden;
+          display: block;
+          font-size: .875rem;
+          font-weight: 400;
+          line-height: 1.6;
+          text-transform: lowercase; }
+          html .container-flow aside ul li a img {
+            float: left;
+            margin-right: 1rem;
+            max-width: 40px; }
+          html .container-flow aside ul li a span {
+            color: #F4F4F4;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: .75rem; }
+            html .container-flow aside ul li a span:hover {
+              color: #F4F4F4; }
+    html .container-flow aside .view-more {
+      text-align: center;
+      color: #E95451;
+      width: 100%;
+      padding: 1rem 0 1rem;
+      display: block; }
+
+@keyframes heart-beat {
+  0% {
+    transform: scale(1);
+    fill: #FFFFFF;
+    stroke: #F4F4F4; }
+  10% {
+    transform: scale(0.8); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1);
+    fill: #E95451;
+    stroke: #E95451; } }

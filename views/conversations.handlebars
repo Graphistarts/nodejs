@@ -1,0 +1,103 @@
+<main class="messages clearfix">
+    <div class="tools">
+        <button><img src="../img/sound.svg" alt="Listen to the word"/></button>
+        <p><strong>Bonjour </strong>: Hello</p>
+    </div>
+<div class="wrapper">
+    <section class="friends">
+        <header>
+            <h1>Friends</h1>
+        </header>
+        <main>
+            <div>
+                <ul>
+                    <li class="add-friend">
+                        <div class="clearfix">
+                            <img class="mini-pic" src="../img/users/4.jpg" alt="profile picture of user"/>
+                            <img src="../img/flags/fr.jpg" alt="" class="country"/>
+                            <p><strong>Hijoli</strong></p>
+                            <p>wants to add you</p>
+                        </div>
+                            <div class="choices">
+                                <button class="no">Deny</button>
+                                <button class="yes">Accept</button>
+                            </div>
+                    </li>
+                    <li>
+                        <button>
+                            <span class="is-connected connected"></span>
+                            <img class="mini-pic" src="../img/users/user_profile_1.jpg" alt="profile picture of Katz18"/>
+                            <img src="../img/flags/de.jpg" alt="" class="country"/>
+                            <p><strong>Katz18</strong><span class="place">München</span></p>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <span class="is-connected connected"></span>
+                            <img class="mini-pic" src="../img/users/1.jpg" alt="profile picture of Katz18"/>
+                            <img src="../img/flags/es.jpg" alt="" class="country"/>
+                            <p><strong>Alvaro</strong><span class="place">Orihuela</span></p>
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </main>
+    </section>
+    <section class="conversations">
+        <header>
+            <h1>Conversations</h1>
+            <button>New chat <img src="../img/message.svg" alt="New chat"/></button>
+        </header>
+        <main>
+            <ul>
+                <li>
+                    <button class="new-message">
+                        <span class="is-read"></span>
+                        <img class="mini-pic" src="../img/users/user_profile_1.jpg" alt=""/>
+                        <img src="../img/flags/de.jpg" alt="" class="country"/>
+                        <p><strong>Katz18</strong>Oh hard luck ! Otherwise what is your favorite type of song ?</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="current">
+                        <img class="mini-pic" src="../img/users/1.jpg" alt=""/>
+                        <img src="../img/flags/es.jpg" alt="" class="country"/>
+                        <p><strong>Alvaro</strong>Oh so cool ! I live in Orihuela, 20 km from there :D Maybe we can s…</p>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img class="mini-pic" src="../img/users/2.jpg" alt=""/>
+                        <img src="../img/flags/fr.jpg" alt="" class="country"/>
+                        <p><strong>Menduil</strong>This is not very because we are there to learn and my english is n...</p>
+                    </button>
+                </li>
+            </ul>
+        </main>
+    </section>
+    <section class="chat">
+        <header>
+            <h1>Alvaro</h1>
+            <div class="streaming">
+            <button><img src="../img/call.svg" alt=""/></button>
+            <button><img src="../img/video.svg" alt=""/></button>
+            </div>
+        </header>
+        <main>
+            <div class="content-chat">
+                <div class="message clearfix"> <div class="bubble"> <div class="container-content"> <p class="text show">Hola como estas ? Me llamo heaj y hablo un poco español :) Puedes ayudarme porque hago un Erasmus en mio ultimo año :) ?</p> <p class="text-corr"><strong>¿</strong>Hola como estas ? Me llamo heaj y hablo un poco español :) <strong>¿</strong> Puedes ayudarme porque hago un Erasmus en mio ultimo año ? </p> </div> </div> <button class="display-correction show">Show correction</button> </div><div class="you message clearfix"> <a href="/profile/"><img class="mini-pic" src="../img/users/1.jpg" alt=""/></a> <div class="bubble"> <button class="edit"><img src="../img/correct.svg" alt="edit button"/></button> <div class="container-content"> <p class="text show">Yes for sure ! :) Where <strong>do you will</strong> go ?</p> <p class="text-corr">Yes for sure ! :) Where <strong>will you</strong> go ?</p> <p class="correction"> <textarea>Yes for sure ! :) Where will you go ?</textarea> <div class="actions"> <button cta-text="Cancel" class="cta cta2 cancel">Cancel</button> <button cta-text="Save" class="cta save">Save</button> </div> </p> </div> <button class="display-correction show">Show correction</button> </div> </div><div class="message clearfix"> <div class="bubble"> <div class="container-content"> <p class="text show">Voy a Torrevieja</p> </div> </div> </div><div class="you message clearfix"> <a href="/profile/"><img class="mini-pic" src="../img/users/1.jpg" alt=""/></a> <div class="bubble"> <button class="edit"><img src="../img/correct.svg" alt="edit button"/></button> <div class="container-content"> <p class="text show">Oh so cool ! I live in Orihuela, 20 km from there :D Maybe we can see each other to learn ?</p> <p class="text-corr"></p> <p class="correction"> <textarea>Oh so cool ! I live in Orihuela, 20 km from there :D Maybe we can see each other to learn ?</textarea> <div class="actions"> <button cta-text="Cancel" class="cta cta2 cancel">Cancel</button> <button cta-text="Save" class="cta save">Save</button> </div> </p> </div> <button class="display-correction">Show correction</button> </div> </div>
+
+            </div>
+            <div class="input-comment">
+                <input class="input-message" type="text" placeholder="Type a message..."/>
+                <label for="file" class="add-file">+</label>
+                <input class="hidden" id="file" name="file" type="file"/>
+            </div>
+        </main>
+        <div class="tips">
+            <button class="show-tips"></button>
+        </div>
+    </section>
+</div>
+</main>

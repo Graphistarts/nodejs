@@ -1,0 +1,10 @@
+{
+  "chat":[
+    {
+      "name":"Alvaro",
+      "image_path":"test",
+      "short":"Lorem ipsum dolor sit amet, euismod veritus eu cum, eam verear maior...",
+      "long":'<div class="message clearfix"><div class="bubble"><p>Yes I think that this is how I learn the best a foreign language</p></div></div><div class="you message clearfix"><img class="mini-pic" src="../img/users/user_profile_1.jpg" alt=""/><div class="bubble"><button class="edit"><img src="../img/correct.svg" alt="edit button"/></button><div class="container-content"><p class="text show">I would like to learning english with you because this is the first time I meet a person</p><p class="text-corr"></p><p class="correction"><textarea>I would like to learning english with you because this is the first time I meet a person</textarea><div class="actions"><button cta-text="Cancel" class="cta cta2 cancel">Cancel</button><button cta-text="Save" class="cta save">Save</button></div></p></div><button class="display-correction">Show correction</button></div></div>'
+    }
+  ]
+}

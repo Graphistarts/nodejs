@@ -1,0 +1,77 @@
+{
+    "404":{
+      "title":"Whoops, you seem lost | Squiks",
+      "css":"404",
+      "connected" : null
+    },
+  "500":{
+    "title":"Something broke | Squiks",
+    "css":"500",
+    "connected" : null
+  },
+    "home":{
+      "title":"Home | Squiks",
+      "css":"home",
+      "isheader" :  true,
+      "connected" : true,
+      "js": "home",
+      "active_home":true
+    },
+    "login":{
+      "title":"Login | Squiks",
+      "css":"signup",
+      "connected" : false
+    },
+    "conversations":{
+      "title":"Conversation | Squiks",
+      "css":"conversations",
+      "isheader" : true,
+      "connected" : true,
+      "js" : "conversations",
+      "active_conversations":true
+    },
+    "profile":{
+      "title":"Profile | Squiks",
+      "css":"profile",
+      "isheader" : true,
+      "connected" : true,
+      "js":"profile",
+      "active_profile":true
+    },
+    "signup":{
+      "title":"Signup | Squiks",
+      "css":"signup",
+      "crsf":"Overdose is my pseudo",
+      "connected" : false,
+      "js":"signup"
+    },
+  "penpal":{
+    "title":"Find a penpal | Squiks",
+    "css":"penpal",
+    "isheader" : true,
+    "connected" : true,
+    "js":"penpal",
+    "active_penpal":true
+  },
+  "index":{
+    "title":"Find a penpal | Squiks",
+    "css":"index",
+    "connected" : false
+  },
+  "error":{
+    "title":"Error | Squiks",
+    "css":"error",
+    "connected" : null
+  },
+  "blog":{
+    "title":"Blog | Squiks",
+    "css":"blog",
+    "connected" : null
+  },
+  "introduction":{
+    "title":"Introduction | Squiks",
+    "css":"introduction",
+    "connected" : true,
+    "js" : "introduction"
+  }
+}

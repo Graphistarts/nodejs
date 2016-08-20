@@ -1,0 +1,20 @@
+@import "../overall/colors.scss";
+@import "../global/_functions.scss";
+@import "../global/_easing.scss";
+
+
+.four-zero-four{
+  background:red;
+  text-align: center;
+  min-height: 100vh;
+  background: url(../../img/404-bg.jpg);
+  background-size: cover;
+  h1{
+    padding-top: 40vh;
+    padding-bottom: 4rem;
+    font-size: 8rem;
+  }
+  h2{
+    margin-bottom: 2rem;
+  }
+}
